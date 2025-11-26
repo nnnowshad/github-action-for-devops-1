@@ -1,0 +1,12 @@
+name: Cron-Job
+on:
+    schedule:
+        - cron: "*/1 * * * *"
+jobs:
+    cron-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Cron-Job-Automate
+              run: |
+                  echo This is cron job
+                  echo "runs on $(uname)"
