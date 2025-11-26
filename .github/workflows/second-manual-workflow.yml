@@ -1,0 +1,11 @@
+name: Second-Manual-Workflow-Job
+on:
+    workflow_dispatch:
+jobs:
+    Second-Jobs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Second Manual Job
+              run: |
+                  echo Manual Job Workflow
+                  echo "runs on $(uname)"
