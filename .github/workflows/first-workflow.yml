@@ -1,0 +1,10 @@
+name: first-github-action
+on: [push]
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: First Job Step
+              run: |
+                  echo First Github   Action job
+                  echo "runs on $(uname)"
