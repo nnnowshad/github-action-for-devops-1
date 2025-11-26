@@ -1,0 +1,13 @@
+name: Trigger-From-Any-Branches
+on:
+    push:
+        branches:
+            - main
+jobs:
+    trigger-from-main:
+        runs-on: ubuntu-latest
+        steps:
+            - name: from-main-branch
+              run: |
+                  echo run from main branch
+                  echo "runs in $(uname)"
